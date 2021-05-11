@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Algorithm Inc</title>
+		<meta name="description" content="Algorithm Inc">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+ 
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+		<link href="css/animations.css" rel="stylesheet"> 
+		<link href="css/about.css" rel="stylesheet"> 
+		<link href="css/custom.css" rel="stylesheet">
+	</head>
+    <style>
+        ul {
+         margin: 0px;
+         padding: 0px;
+     }
+     .footer-section {
+       background: #3f3f3f;
+       position: relative;
+     }
+     .footer-cta {
+       border-bottom: 1px solid #373636;
+     }
+     .single-cta i {
+       color: #0f83f7;
+       font-size: 30px;
+       float: left;
+       margin-top: 8px;
+     }
+     .cta-text {
+       padding-left: 15px;
+       display: inline-block;
+     }
+     .cta-text h4 {
+       color: #fff;
+       font-size: 20px;
+       font-weight: 600;
+       margin-bottom: 2px;
+     }
+     .cta-text span {
+       color: #757575;
+       font-size: 15px;
+     }
+     .footer-content {
+       position: relative;
+       z-index: 2;
+     }
+     .footer-pattern img {
+       position: absolute;
+       top: 0;
+       left: 0;
+       height: 330px;
+       background-size: cover;
+       background-position: 100% 100%;
+     }
+     .footer-logo {
+       margin-bottom: 30px;
+     }
+     .footer-logo img {
+         max-width: 200px;
+     }
+     .footer-text p {
+       margin-bottom: 14px;
+       font-size: 14px;
+           color: #7e7e7e;
+       line-height: 28px;
+     }
+     .footer-social-icon span {
+       color: #fff;
+       display: block;
+       font-size: 20px;
+       font-weight: 700;
+       font-family: 'Poppins', sans-serif;
+       margin-bottom: 20px;
+     }
+     .footer-social-icon a {
+       color: #fff;
+       font-size: 16px;
+       margin-right: 15px;
+     }
+     .footer-social-icon i {
+       height: 40px;
+       width: 40px;
+       text-align: center;
+       line-height: 38px;
+       border-radius: 50%;
+     }
+     .facebook-bg{
+       background: #3B5998;
+     }
+     .twitter-bg{
+       background: #55ACEE;
+     }
+     .google-bg{
+       background: #DD4B39;
+     }
+     .footer-widget-heading h3 {
+       color: #fff;
+       font-size: 20px;
+       font-weight: 600;
+       margin-bottom: 40px;
+       position: relative;
+     }
+     .footer-widget-heading h3::before {
+       content: "";
+       position: absolute;
+       left: 0;
+       bottom: -15px;
+       height: 2px;
+       width: 50px;
+       background: #0f83f7;
+     }
+     .footer-widget ul li {
+       display: inline-block;
+       float: left;
+       width: 50%;
+       margin-bottom: 12px;
+     }
+     .footer-widget ul li a:hover{
+       color: #0f83f7;
+     }
+     .footer-widget ul li a {
+       color: #878787;
+       text-transform: capitalize;
+     }
+     .subscribe-form {
+       position: relative;
+       overflow: hidden;
+     }
+     .subscribe-form input {
+       width: 100%;
+       padding: 14px 28px;
+       background: #2E2E2E;
+       border: 1px solid #2E2E2E;
+       color: #fff;
+     }
+     .subscribe-form button {
+         position: absolute;
+         right: 0;
+         background: #0f83f7;
+         padding: 13px 20px;
+         border: 1px solid #0f83f7;
+         top: 0;
+     }
+     .subscribe-form button i {
+       color: #fff;
+       font-size: 22px;
+       transform: rotate(-6deg);
+     }
+     .copyright-area{
+       background: #202020;
+       padding: 25px 0;
+     }
+     .copyright-text p {
+       margin: 0;
+       font-size: 14px;
+       color: #878787;
+     }
+     .copyright-text p a{
+       color: #0f83f7;
+     }
+     .footer-menu li {
+       display: inline-block;
+       margin-left: 20px;
+     }
+     .footer-menu li:hover a{
+       color: #0f83f7;
+     }
+     .footer-menu li a {
+       font-size: 14px;
+       color: #878787;
+     }
+     .circle{
+       
+       position: absolute;
+       transform: translate(-50%, -50%);
+       width: 15px;
+       height: 15px;
+       background-color: transparent;
+       border-radius: 50%;
+       border: 3px solid grey;
+       animation: animate 0.5s linear forwards;
+     }
+
+
+@keyframes animate {
+   0% {
+      width: 0%;
+      height: 0%;
+      opacity: 1;
+   }
+   70% {
+     
+      opacity: 1;
+   }
+   100% {
+      width: 30%;
+      height: 30%;
+      opacity: 0;
+   }
+}
+
+     </style>
+    <body class="no-trans">
+        <!-- scrollToTop --> 
+        <div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+        <!-- header start --> 
+        <header class="header fixed clearfix navbar navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <!-- header-left start --> 
+                        <div class="header-left">
+
+                         
+
+                            <!-- name-and-slogan -->
+                            <div class="logo-section smooth-scroll">
+                                <div class="brand"><img src="images/logo.png" style="height: 70px; width: 250px; padding-right: 90px;"></div>								
+                            </div>
+
+                        </div>
+                        <!-- header-left end -->
+
+                    </div>
+                    <div class="col-md-8">
+
+                        <!-- header-right start --> 
+                        <div class="header-right">
+
+                            <!-- main-navigation start --> 
+                            <div class="main-navigation animated">
+
+                                <!-- navbar start --> 
+                                <nav class="navbar navbar-default" role="navigation">
+                                    <div class="container-fluid">
+
+                                        <!-- Toggle get grouped for better mobile display -->
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                        </div>
+
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+                                        <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+                                            <ul class="nav navbar-nav navbar-right">
+                                                <li class="active"><a href="index.html">Home</a></li>
+                                                <li class="active"><a href="about.html">About Us</a></li>
+                                                <li class="active"><a href="service.html">Product</a></li>
+                                                <li class="active"><a href="pricing.html">Pricing</a></li>
+                                                <li class="active"><a href="staff.html">Staff</a></li>
+                                                <li class="active"><a href="events.html">Events</a></li>
+                                                <li class="active"><a href="contact.html">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </nav>
+                                <!-- navbar end -->
+
+                            </div>
+                            <!-- main-navigation end -->
+
+                        </div>
+                        <!-- header-right end -->
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+  <div id="about_bg">
+    <div class="head-title">
+        <h1 style="color:white; text-align: center;">About Us</h1>                
+    </div>  
+</div>
+ 
+  
+  <section id="aboutUs"><!--Aboutus-->
+<div >
+  <div class="container">
+    
+    <div class="inner_section">
+ <div class="row">
+      <div class="col-md-6"> <img class="img-responsive" src="images/team.jpg" style="padding-top: 30px;"> </div>
+      <div class="col-md-6">
+        <h3 style="color:#6695c5">Who we are</h3>
+        <p>Kimenyi Aimable, Founder and CEO, did economics in high school with a goal to understand more
+          how to build sustainable wealth; He did a double Bachelor's Degree in Mathematics and computer science at the
+          University of Montreal with a deep need to master a combination of math, finance, and machine to automate
+          managerial operations.
+          At the end of 2007, he realized his continent business communities lack systems that listen to them; He came back to
+          Rwanda and started prototyping small software to help a small business to manage daily transactions, named it Ishyiga. </p><br/>
+        <h3 style="color:#6695c5">Why choose us?</h3>
+        <p>Ishyiga is a series of software each having its specific role, like a human body need different part which have specific task to perform, some
+          clients use only one or few depending on the size of their needs, some use almost everyone of them responding to complexes need such as: “the
+          full supply chain”, “full HR control and mobile remuneration”, “full financial and budget control”, “Full Fleet control”.</p>
+      </div>
+    </div>
+    
+	  <div class="row">
+						<div class="col-lg-12 about-us">
+							<div class="row">
+							<div class="col-md-6">
+								<h3 >Our Business</h3>
+									<p>
+                    Ineza Health Platform: Since 2017 we have 95% market of private pharmacies using our software Ishyiga POS, many asked us
+                    to create an easy way to save and share securely health data among them; Patient, Pharmacist, Doctor, Insurer, Wholesaler,
+                    Mtn; today with Ineza App you can ask for an appointment, search for drug and pay all your health needs. </p>
+									<p>
+                    Virtual Sales Data Controller: Since March 2019 we are collecting more than half of taxes for RRA in EBM project with this
+                    solution which integrate with taxpayers invoicing system and control each sale, stamp it and report it to RRA backend server
+                    every 15 seconds. </p>
+                    <p>Virtual Claims Data Controller: Since January 2019, RSSB has approached us to conduct a study on how to make their claims
+                      verification done automatically, we have worked together to create and tested Ishyiga Symphony successful, now is waiting
+                      for board approval</p>
+
+								
+								</div><!-- /.col-md-6 -->
+								<div class="col-md-6">
+									<h3>We Develop Awesome Softwares</h3>
+								 <img src="images/ishyiga.PNG" style="width: 600px; height: 400px;"></div>
+								</div><!-- /.col-md-6 -->
+								
+							</div><!-- /.row -->	
+						</div><!-- /.col-lg-12 -->
+					</div>
+      
+    </div>
+  </div> 
+  </div>
+</section>
+<!--Aboutus--> 
+
+
+<!--Service-->
+
+  
+</section>
+      <div class="testimonials-clean">
+          <div class="container">
+              <div class="intro">
+                  <h2 class="text-center" style="color: #6695c5">What Drives Us </h2>
+                  <p class="text-center">Success is what motivates us to do a good job.
+                       Knowing the fact that our hard work and perseverance will help us achieve greater professional success is what keeps us going.
+                      </p>
+              </div>
+              <div class="row people">
+                  <div class="col-md-6 col-lg-4 item">
+                      <div class="box">
+                          <h5 class="name" style="color: #6695c5">Our Mission</h5>
+                          <br>
+                          <p class="description">our vision is to become the largest development team in Africa, putting as many as possible products to help businesses,
+                            to make this happen we have been training more than 40 students each year this guarantee us to have a best permanent and
+                            reserve team of more than 200 engineers ready to respond on any regional project</p>
+                      </div>
+                      <div class="author">
+                         
+                         
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 item">
+                      <div class="box">
+                          <h5 class="name" style="color: #6695c5">Our Vision</h5>
+                          <br>
+                          <p class="description">our vision is to become the largest development team in Africa, putting as many as possible products to help businesses,
+                            to make this happen we have been training more than 40 students each year this guarantee us to have a best permanent and
+                            reserve team of more than 200 engineers ready to respond on any regional project </p>
+                      </div>
+                    
+                  </div>
+                  <div class="col-md-6 col-lg-4 item">
+                      <div class="box">
+                          <h5 class="name" style="color: #6695c5">Our Target</h5>
+                          <br>
+                          <p class="description">Our targets was to develop management software to help Africa business to
+                            automate their operations, therefore raise their performance and profitability. In Africa few software are on the market developed
+                            to answer local problems; every community has its culture, its way of communicating, its way of authority.  </p>
+                      </div>
+                      <div class="author"><img class="rounded-circle" >
+                       
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>        
+
+      <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown" style="text-align: center; font-weight: bold; padding-bottom: 50px;">Gallery</h2>
+                
+            </div>
+
+            <div class="text-center">
+                <ul class="portfolio-filter" style="display:none">
+                    <li><a class="active" href="#" data-filter="*">All Works</a></li>
+                    <li><a href="#" data-filter=".designing">Aroma</a></li>
+                    <li><a href="#" data-filter=".mobile">Manicure</a></li>
+                    <li><a href="#" data-filter=".development">Body Spa</a></li>
+                </ul><!--/#portfolio-filter-->
+            </div>
+
+            <div class="portfolio-items">
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/team.jpg" alt="">
+                        
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/12.JPG" alt="">
+                       
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/pik1.jpg" alt="">
+                        
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/pik2.jpg" alt="">
+                       
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/pik3.JPG" alt="">
+                      
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/pik4.JPG" alt="">
+                        
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/pik5" alt="">
+                        
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/pik6" alt="">
+                        
+                    </div>
+                </div><!--/.portfolio-item-->
+            </div>
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
+
+	<footer class="footer-section">
+		<div class="container">
+			<div class="footer-cta pt-5 pb-5">
+				<div class="row">
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="fa fa-phone"></i>
+							<div class="cta-text">
+								<h4>Find us</h4>
+								<span>1010 Avenue, sw 54321, chandigarh</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="fa fa-phone"></i>
+							<div class="cta-text">
+								<h4>Call us</h4>
+								<span>9876543210 0</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-4 mb-30">
+						<div class="single-cta">
+							<i class="fa fa-phone"></i>
+							<div class="cta-text">
+								<h4>Mail us</h4>
+								<span>mail@info.com</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-content pt-5 pb-5">
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 mb-50">
+						<div class="footer-widget">
+							<div class="footer-logo">
+								<a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+							</div>
+							<div class="footer-text">
+								<p>Ensure that your growth won't outpace your business system software that grows width your hard work to expand your businessEvery problem has its unique solution,</p>
+							</div>
+							<div class="footer-social-icon">
+								<span>Follow us</span>
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+						<div class="footer-widget">
+							<div class="footer-widget-heading">
+								<h3>Useful Links</h3>
+							</div>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">about</a></li>
+								<li><a href="#">Product</a></li>
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">Events</a></li>
+								<li><a href="#">Staff</a></li>
+								<li><a href="#">Contact</a></li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+						<div class="footer-widget">
+							<div class="footer-widget-heading">
+								<h3>Our Software</h3>
+							</div>
+							<ul>
+								<li><a href="#">Ishyiga™ Mini</a></li>
+								<li><a href="#">Ishyiga™ Compta</a></li>
+								<li><a href="#">Ishyiga™ Live</a></li>
+								<li><a href="#">Ishyiga™ VSCD</a></li>
+								<li><a href="#">Ishyiga™ Pos</a></li>
+								<li><a href="#">Ishyiga™ Import</a></li>
+								<li><a href="#">Ineza App</a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 text-center text-lg-left">
+						<div class="copyright-text">
+							<p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Algorithm Inc</a></p>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+						<div class="footer-menu">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Product</a></li>
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+    var pulse = function(){
+      var e = document.createElement("div");
+      e.setAttribute('class','circle'),document.body.appendChild(e),
+      e.style.top= event.pageY + 'px',
+      e.style.left = event.pageX + 'px',
+      setTimeout(function(){
+        document.body.removeChild(e)
+      },500)
+
+    };
+     document.addEventListener('click',pulse);
+      </script>
+	</body>
+</html>

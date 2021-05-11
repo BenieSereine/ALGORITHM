@@ -1,0 +1,201 @@
+
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,700);
+ @import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300);
+   
+ html,
+ body {
+   height: 100%;
+ }
+ body {
+   font-size: 15px;
+   line-height: 1.50;
+   color: #292929;
+   /* background-color: #B5B5B5; */
+   position: relative;
+ }
+ 
+ 
+ 
+ 
+ /* Modals
+ ---------------------------------- */
+ .modal-content {
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+ }
+ .modal-header {
+   background-color: #626262;
+   color: #ffffff;
+ }
+ .modal-header h4 {
+   color: #ffffff;
+ }
+ .modal-header .close {
+   font-weight: 300;
+   color: #FFFFFF;
+   text-shadow: none;
+   filter: alpha(opacity=100);
+   opacity: 1;
+ }
+  
+ @media (min-width:1200px) {
+   .modal-lg {
+     width: 1140px;
+   }
+ }
+ 
+ /* Media
+ ---------------------------------- */
+ .media .fa {
+   font-size: 47px;
+   width: 40px;
+   height: 25px;
+   line-height: 25px;
+   padding: 0 5px;
+   text-align: center;
+ }
+ 
+ /* Navigations
+ ----------------------------------------------------------------------------- */
+ .header .navbar {
+   margin-bottom: 0;
+ }
+ .main-navigation .navbar-default {
+   background-color: transparent;
+   border: none;
+ }
+ .main-navigation .navbar-default .navbar-nav > li > a {
+   padding: 10px 20px;
+   color: rgba(255, 255, 255, 0.68);
+   font-weight: 700;
+   font-size: 16px;
+ }
+ .main-navigation .navbar-default .navbar-nav > li.active > a {
+   background-color: transparent;
+   color: #FFFFFF;
+ }
+ .main-navigation .navbar-default .navbar-nav > li > a:hover,
+ .main-navigation .navbar-default .navbar-nav > li.active > a:hover {
+   color: #FFFFFF;
+ }
+ 
+ /* carousel */
+ #quote-carousel 
+ {
+   padding: 0 10px 30px 10px;
+   margin-top: 30px;
+ }
+ 
+ /* Control buttons  */
+ #quote-carousel .carousel-control
+ {
+   background: none;
+   color: #222;
+   font-size: 2.3em;
+   text-shadow: none;
+   margin-top: 30px;
+ }
+ /* Previous button  */
+ #quote-carousel .carousel-control.left 
+ {
+   left: -12px;
+ }
+ /* Next button  */
+ #quote-carousel .carousel-control.right 
+ {
+   right: -12px !important;
+ }
+ /* Changes the position of the indicators */
+ #quote-carousel .carousel-indicators 
+ {
+   right: 50%;
+   top: auto;
+   bottom: 0px;
+   margin-right: -19px;
+ }
+ /* Changes the color of the indicators */
+ #quote-carousel .carousel-indicators li 
+ {
+   background: #c0c0c0;
+ }
+ #quote-carousel .carousel-indicators .active 
+ {
+   background: #333333;
+ }
+ #quote-carousel img
+ {
+   width: 250px;
+   height: 100px
+ }
+ /* End carousel */
+ 
+ .item blockquote {
+     border-left: none;
+     margin: 0;
+     color: #000;
+ }
+ 
+ .item blockquote img {
+     margin-bottom: 10px;
+ }
+ 
+ .item blockquote p:before {
+     content: "\f10d";
+     font-family: 'Fontawesome';
+     float: left;
+     margin-right: 10px;
+ }
+ .panel-danger > .panel-heading {
+   background-color: #535353;
+   border-color: transparent;
+ }
+ 
+ /* Blocks/Widgets
+ ----------------------------------------------------------------------------- */
+ /* Logo, Site Name, Site Slogan
+ ---------------------------------- */
+ .logo {
+   margin: 10px 0px 10px 0;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+ }
+ .logo,
+ .logo-section {
+   float: left;
+ }
+ 
+
+ 
+ /* Fixed Header
+ ----------------------------------------------------------------------------- */
+ .fixed-header-on .header {
+   padding: 5px 0;
+   background-color: #F13647;
+ }
+ .fixed-header-on .brand {
+   font-size: 24px;
+ }
+ .fixed-header-on .logo {
+   -webkit-transform: scale(0.8);
+   transform: scale(0.8);
+   margin-top: 0;
+   margin-bottom: 0;
+ }
+ @media (min-width:768px) {
+   .fixed-header-on .navbar-default .navbar-nav > li > a {
+     padding-top: 20px;
+     padding-bottom: 20px;
+   }
+ }
+ @media (max-width:991px) {
+   .fixed-header-on .logo,
+   .fixed-header-on .brand,
+   .fixed-header-on .site-slogan {
+     display: none;
+   }
+ }
+ 

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Algorithm Inc</title>
+		<meta name="description" content="Algorithm Inc">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+		<link href="css/animations.css" rel="stylesheet"> 
+		<link href="css/services.css" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="css/custom.css" rel="stylesheet">
+	</head>
+  <style>
+    ul {
+     margin: 0px;
+     padding: 0px;
+ }
+ .footer-section {
+   background: #3f3f3f;
+   position: relative;
+ }
+ .footer-cta {
+   border-bottom: 1px solid #373636;
+ }
+ .single-cta i {
+   color: #0f83f7;
+   font-size: 30px;
+   float: left;
+   margin-top: 8px;
+ }
+ .cta-text {
+   padding-left: 15px;
+   display: inline-block;
+ }
+ .cta-text h4 {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 2px;
+ }
+ .cta-text span {
+   color: #757575;
+   font-size: 15px;
+ }
+ .footer-content {
+   position: relative;
+   z-index: 2;
+ }
+ .footer-pattern img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 330px;
+   background-size: cover;
+   background-position: 100% 100%;
+ }
+ .footer-logo {
+   margin-bottom: 30px;
+   width: 150px;
+ }
+ .footer-logo img {
+     max-width: 200px;
+ }
+ .footer-text p {
+   margin-bottom: 14px;
+   font-size: 14px;
+       color: #7e7e7e;
+   line-height: 28px;
+ }
+ .footer-social-icon span {
+   color: #fff;
+   display: block;
+   font-size: 20px;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+   margin-bottom: 20px;
+ }
+ .footer-social-icon a {
+   color: #fff;
+   font-size: 16px;
+   margin-right: 15px;
+ }
+ .footer-social-icon i {
+   height: 40px;
+   width: 40px;
+   text-align: center;
+   line-height: 38px;
+   border-radius: 50%;
+ }
+ .facebook-bg{
+   background: #3B5998;
+ }
+ .twitter-bg{
+   background: #55ACEE;
+ }
+ .google-bg{
+   background: #DD4B39;
+ }
+ .footer-widget-heading h3 {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 40px;
+   position: relative;
+ }
+ .footer-widget-heading h3::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: -15px;
+   height: 2px;
+   width: 50px;
+   background: #0f83f7;
+ }
+ .footer-widget ul li {
+   display: inline-block;
+   float: left;
+   width: 50%;
+   margin-bottom: 12px;
+ }
+ .footer-widget ul li a:hover{
+   color: #0f83f7;
+ }
+ .footer-widget ul li a {
+   color: #878787;
+   text-transform: capitalize;
+ }
+ .subscribe-form {
+   position: relative;
+   overflow: hidden;
+ }
+ .subscribe-form input {
+   width: 100%;
+   padding: 14px 28px;
+   background: #2E2E2E;
+   border: 1px solid #2E2E2E;
+   color: #fff;
+ }
+ .subscribe-form button {
+     position: absolute;
+     right: 0;
+     background: #0f83f7;
+     padding: 13px 20px;
+     border: 1px solid #0f83f7;
+     top: 0;
+ }
+ .subscribe-form button i {
+   color: #fff;
+   font-size: 22px;
+   transform: rotate(-6deg);
+ }
+ .copyright-area{
+   background: #202020;
+   padding: 25px 0;
+ }
+ .copyright-text p {
+   margin: 0;
+   font-size: 14px;
+   color: #878787;
+ }
+ .copyright-text p a{
+   color: #0f83f7;
+ }
+ .footer-menu li {
+   display: inline-block;
+   margin-left: 20px;
+ }
+ .footer-menu li:hover a{
+   color: #0f83f7;
+ }
+ .footer-menu li a {
+   font-size: 14px;
+   color: #878787;
+ }
+ </style>
+	<body class="no-trans">
+		<!-- scrollToTop --> 
+    <header id="header">
+      <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+          <div class="container">
+              <div class="navbar-header">
+                  <a type="a" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </a>
+                  <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="height: 70px; width: 300px; padding-right: 90px;" alt="logo"></a>
+              </div>
+      
+              <div class="collapse navbar-collapse navbar-right">
+                  <ul class="nav navbar-nav">
+                      <li class="scroll"><a href="index.html">Home</a></li>  
+                      
+                      <li class="scroll"><a href="about.html">About Us</a></li> 
+                      <li class="scroll"><a href="service.html">Product</a></li>
+                      <li class="scroll"><a href="staff.html">Staff</a></li>
+                      <li class="scroll"><a href="events.html">Events</a></li>
+                      <li class="scroll"><a href="pricing.html">Pricing</a></li>
+                      <li class="scroll"><a href="contact.html">Contact Us</a></li>                        
+                  </ul>
+              </div>
+          </div><!--/.container-->
+      </nav><!--/nav-->
+  </header>
+  <h1 id="services" class="title text-center" style="padding-top: 150px; color: #6695c5;">Our Product</h1>
+
+    <div class="container">
+      <div class="row">
+        
+        <!-- Purple Table -->
+        <div class="col-md-4">
+           <div class="pricing-table purple">
+              <!-- Table Head -->
+            
+              <h2>Ishyiga™ Live</h2>
+             
+              <!-- Features -->
+              <div class="icon"><img src="images/thu_live.png"></div>
+              <div class="pricing-features">
+               <p>Ishyiga™ Live was developed for a better functionality of Ishyiga™ softwares, using a data centre which was made to provide end-users to get updated information which may be useful for them, Our Control Tour is able to provide vital huge medical data from our health clients.</p>
+              </div>
+            
+              <!-- a -->
+           
+              <div class="form-group">
+                <p> <a  href="pay.html" type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Get the package now</a> </p>
+            </div>
+           </div>
+        </div>
+        <!-- Turquoise Table -->
+        <div class="col-md-4">
+         <div class="pricing-table purple">
+            <!-- Table Head -->
+          
+            <h2>Ishyiga™ Compta</h2>
+           
+            <!-- Features -->
+            <div class="icon"><img src="images/thu_compta.png"></div>
+            <div class="pricing-features">
+             <p>Made for business accounting, Ishyiga™ Compta is an highly-needed software which can save a lot of time, money and provide accountants a tight control RRA Certified Invoices data import to provide exact.</p>
+            </div>
+          
+            <!-- a -->
+          
+            <div class="form-group" style="padding-top: 50px;">
+              <p> <a  href="pay.html" type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Get the package now</a> </p>
+          </div>
+            <!-- <a class="price-a" href="ISHYIGA ERP.zip" download="ISHYIGA ERP"></a>Download package</a> -->
+         </div>
+      </div>
+        <!-- Red Table -->
+        <div class="col-md-4">
+         <div class="pricing-table purple">
+            <!-- Table Head -->
+          
+            <h2>Ishyiga™ Import</h2>
+           
+            <!-- Features -->
+            <div class="icon"><img src="images/thu_import.png"></div>
+            <div class="pricing-features">
+             <p>Ishyiga™ Import was developed for an optimal management of importers such as warehouses, stationnery and today this is used by several stationneries in the Great Lakes Region.</p>
+            </div>
+          
+            <!-- a -->
+          
+            <div class="form-group"  style="padding-top: 75px;">
+              <p> <a  href="pay.html" type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Get the package now</a> </p>
+          </div>
+         </div>
+      </div>
+     </div>
+     <div class="row" style="padding-top:50px">
+        
+      <!-- Purple Table -->
+      <div class="col-md-4">
+         <div class="pricing-table purple">
+            <!-- Table Head -->
+          
+            <h2>Ishyiga™ POS</h2>
+           
+            <!-- Features -->
+            <div class="icon"><img src="images/thu_pos.png"></div>
+            <div class="pricing-features">
+             <p>Ishyiga™ POS was developed for an optimal management of a retail stock, sales,automated reffiling,taxes (RRA certified).</p>
+            </div>
+          
+            <!-- a -->
+          
+              <div class="w3-show-inline-block" style="padding-top: 35px;">
+                <div class="form-group">
+                <p> <a  href="pay.html" type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Get the package now</a> </p>
+            </div>
+                
+                </div>
+         </div>
+      </div>
+      <!-- Turquoise Table -->
+      <div class="col-md-4">
+       <div class="pricing-table purple">
+          <!-- Table Head -->
+        
+          <h2>Ishyiga™ Mini</h2>
+         
+          <!-- Features -->
+          <div class="icon"><img src="images/thu_mini.png" style="height: 150px; width: 500px;"></div>
+          <div class="pricing-features">
+           <p>It developed to provide an optimal management of of a retail stock, sales and can be use by everyone.Our Control Tour is able to provide vital huge medical data from our health clients. </p>
+          </div>
+        
+          <!-- a -->
+        
+          <div class="form-group" >
+            <p> <a  href="pay.html" type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Get the package now</a> </p>
+        </div>
+       </div>
+    </div>
+      <!-- Red Table -->
+      <div class="col-md-4">
+       <div class="pricing-table purple">
+          <!-- Table Head -->
+        
+          <h2>Ishyiga™ VSDC</h2>
+         
+          <!-- Features -->
+          <div class="icon"><img src="images/thu_vsdc.png" style="height: 150px; width: 500px;"></div>
+          <div class="pricing-features">
+           <p>The â€œVirtual Sales Data Controllerâ€ (VSDC) is exactly the solution for Medium and Enterprise business solution for integration with RRA.</p>
+          </div>
+          <div class="form-group"  style="padding-top: 20px;">
+            <p> <a  href="pay.html" type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Get the package now</a> </p>
+        </div>
+       </div>
+    </div>
+   </div>
+      <div class="row" style="padding-top:50px">
+        
+         <!-- Purple Table -->
+         <div class="col-md-4">
+            <div class="pricing-table purple">
+               <!-- Table Head -->
+             
+               <h2>BasicPack 2020</h2>
+              
+               <!-- Features -->
+               <div class="icon"><img src="images/thu_ineza.PNG" style="height: 100px;"></div>
+               <div class="pricing-features">
+                <p>Ishyiga™ Live was developed for a better functionality of Ishyiga™ softwares, using a data centre which was made to provide end-users to get updated information which may be useful for them, 
+                  Our Control Tour is able to provide vital huge medical data from our health clients. </p>
+               </div>
+             
+               <!-- a -->
+               <div class="form-group">
+                <p> <a  href="pay.html" type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Get the package now</a> </p>
+            </div>
+            
+            </div>
+         </div>
+    
+      </div>
+   </div>
+     
+<footer class="footer-section">
+  <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fa fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Find us</h4>
+                          <span>1010 Avenue, sw 54321, chandigarh</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fa fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>9876543210 0</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fa fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Mail us</h4>
+                          <span>mail@info.com</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo" style="width: 10px;"></a>
+                      </div>
+                      <div class="footer-text">
+                          <p>Ensure that your growth won't outpace your business system software that grows width your hard work to expand your businessEvery problem has its unique solution,</p>
+                      </div>
+                      <div class="footer-social-icon">
+                          <span>Follow us</span>
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                      </div>
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">about</a></li>
+                          <li><a href="#">Product</a></li>
+                          <li><a href="#">Pricing</a></li>
+                          <li><a href="#">Events</a></li>
+                          <li><a href="#">Staff</a></li>
+                          <li><a href="#">Contact</a></li>
+                          
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Our Software</h3>
+                      </div>
+                      <ul>
+                          <li><a href="#">Ishyiga™ Mini</a></li>
+                          <li><a href="#">Ishyiga™ Compta</a></li>
+                          <li><a href="#">Ishyiga™ Live</a></li>
+                          <li><a href="#">Ishyiga™ VSCD</a></li>
+                          <li><a href="#">Ishyiga™ Pos</a></li>
+                          <li><a href="#">Ishyiga™ Import</a></li>
+                          <li><a href="#">Ineza App</a></li>
+                          
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Algorithm Inc</a></p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Product</a></li>
+                          <li><a href="#">Pricing</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+		<!-- footer end -->
+
+
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+
+	</body>
+</html>
